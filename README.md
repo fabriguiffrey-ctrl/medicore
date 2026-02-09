@@ -1,8 +1,8 @@
 MediCore
 🏥 Sistema de Gestión para Consultorios y Centros de Salud
-MediCore es una aplicación web en desarrollo orientada a la gestión integral de consultorios médicos, centros de salud y profesionales independientes. El objetivo del proyecto es que exista una aplicación que centralizar profesionales, pacientes, turnos, historias clínicas y operaciones administrativas en un sistema claro, confiable y escalable.
+MediCore es una aplicación web en desarrollo orientada a la gestión integral de consultorios médicos, centros de salud y profesionales independientes. El objetivo del proyecto es que exista una aplicación que centralice profesionales, pacientes y turnos. Medicamentos y tratamientos; historias clínicas y operaciones administrativas; en un sistema claro, confiable y escalable.
 
-Este repositorio me permite mostrar un producto real en constante cambio, documentando cada decisión técnica,mostrar buenas prácticas y adaptación a distintos flujos de trabajo.
+Este repositorio me permite mostrar un producto real en constante cambio, documentando cada decisión técnica, mostrandi buenas prácticas y adaptación a distintos flujos de trabajo.
 También me permite incluir personas que colaboraron con el proyecto desde el frontend, el diseño, y los datos, entre otras cosas.
 
 🎯 Objetivos del proyecto
