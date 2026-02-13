@@ -1,10 +1,14 @@
 from sqlalchemy import create_engine
-from app.core.config import settings
+from sqlalchemy.orm import sessionmaker, declarative_base
+from dotenv import load_dotenv
+import os
+from pathlib import Path
 
-DATABASE_URL = (
-    f"postgresql+psycopg2://{settings.DB_USER}:"
-    f"{settings.DB_PASSWORD}@{settings.DB_HOST}:"
-    f"{settings.DB_PORT}/{settings.DB_NAME}"
-)
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+load_dotenv(BASE_DIR / ".env")
 
-engine = create_engine(DATABASE_URL, pool_pre_ping=True)
+
+DATABASE_URL = os.getenv("DATABASE_URL")
+engine = create_engine(DATABASE_URL)
+SessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False)
+Base = declarative_base()
