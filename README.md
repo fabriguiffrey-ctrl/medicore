@@ -5,13 +5,15 @@ MediCore es una aplicación web en desarrollo orientada a la gestión integral d
 Este repositorio me permite mostrar un producto real en constante cambio, documentando cada decisión técnica, mostrandi buenas prácticas y adaptación a distintos flujos de trabajo.
 También me permite incluir personas que colaboraron con el proyecto desde el frontend, el diseño, y los datos, entre otras cosas.
 
-🎯 Objetivos del proyecto
+🎯 Objetivos del proyecto:
+
 Digitalizar la gestión de pacientes y profesionales de la salud
 Centralizar información clínica y administrativa
 Ofrecer una base sólida para futuras integraciones (pagos, reportes, APIs externas)
 Servir como proyecto portfolio backend / fullstack
 
-🧱 Stack tecnológico
+🧱 Stack tecnológico:
+
 Backend
 Python 3
 FastAPI (arquitectura moderna, rápida y tipada)
@@ -23,7 +25,8 @@ Git & GitHub
 Entorno virtual (venv)
 Variables de entorno (.env)
 
-📂 Estructura del proyecto (simplificada)
+📂 Estructura del proyecto (simplificada):
+
 medicore/
 ├── app/
 │   ├── main.py
@@ -39,13 +42,15 @@ medicore/
 └── README.md
 
 
-🧠 Decisiones técnicas
+🧠 Decisiones técnicas:
+
 FastAPI fue elegido por su excelente performance, documentación automática (Swagger) y tipado.
-PostgreSQL garantiza integridad de datos y escalabilidad.
+PostgreSQL garantiza integridad de datos y escalabilidad. Se buscò llegar a definir una 
 Separación clara entre modelos, esquemas y rutas para favorecer mantenimiento y crecimiento.
 Pensado desde el inicio para escalar y trabajar en equipo.
 
-🎨 Diseño y Experiencia de Usuario (UX/UI)
+🎨 Diseño y Experiencia de Usuario (UX/UI):
+
 El proyecto MediCore incluye trabajo de diseño realizado en colaboración con diseñadores UX/UI, como parte de un enfoque integral de producto.
 Los mockups fueron desarrollados para explorar y validar flujos clave del sistema antes de su implementación técnica, tales como:
 Inicio de sesión y registro de usuarios
@@ -56,13 +61,16 @@ Estas piezas visuales permiten alinear criterios entre diseño y desarrollo, y f
 👥 Colaboración en diseño
 El diseño visual y de experiencia de usuario fue realizado por colaboradores externos. La autoría y créditos correspondientes se detallan de forma explícita para reconocer el trabajo del equipo involucrado.
 
-🚀 Estado actual
+🚀 Estado actual:
+
 🔧 En desarrollo activo
 Funcionalidades iniciales:
 Autenticación básica
 Modelado de usuarios y entidades principales
 Conexión estable a base de datos
+
 Próximos pasos:
+
 Gestión de pacientes
 Turnos médicos
 Roles y permisos
@@ -82,10 +90,10 @@ Ejecutar:
 uvicorn app.main:app --reload
 
 
-🤝 Colaboración
+🤝 Colaboración:
+
 Este proyecto está abierto a mejoras, sugerencias y aprendizaje colaborativo.
-Issues para bugs o ideas
-Pull Requests bienvenidos
+
 
 👤 Autor
 Fabricio Guiffrey
