@@ -1,16 +1,18 @@
 MediCore
-🏥 Sistema de Gestión para Consultorios y Centros de Salud
+
+🏥 Sistema de Gestión para Consultorios y Centros de Salud.
+
 MediCore es una aplicación web en desarrollo orientada a la gestión integral de consultorios médicos, centros de salud y profesionales independientes. El objetivo del proyecto es que exista una aplicación que centralice profesionales, pacientes y turnos. Medicamentos y tratamientos; historias clínicas y operaciones administrativas; en un sistema claro, confiable y escalable.
 
-Este repositorio me permite mostrar un producto real en constante cambio, documentando cada decisión técnica, mostrandi buenas prácticas y adaptación a distintos flujos de trabajo.
+Este repositorio me permite mostrar un producto real en constante cambio, documentando cada decisión técnica, mostrando buenas prácticas y adaptación a distintos flujos de trabajo.
 También me permite incluir personas que colaboraron con el proyecto desde el frontend, el diseño, y los datos, entre otras cosas.
 
 🎯 Objetivos del proyecto:
 
-Digitalizar la gestión de pacientes y profesionales de la salud
-Centralizar información clínica y administrativa
+Digitalizar la gestión de pacientes y profesionales de la salud.
+Centralizar información clínica y administrativa.
 Ofrecer una base sólida para futuras integraciones (pagos, reportes, APIs externas)
-Servir como proyecto portfolio backend / fullstack
+Servir como proyecto portfolio backend / fullstack.
 
 🧱 Stack tecnológico:
 
@@ -44,10 +46,9 @@ medicore/
 
 🧠 Decisiones técnicas:
 
-FastAPI fue elegido por su excelente performance, documentación automática (Swagger) y tipado.
-PostgreSQL garantiza integridad de datos y escalabilidad. Se buscò llegar a definir una 
-Separación clara entre modelos, esquemas y rutas para favorecer mantenimiento y crecimiento.
-Pensado desde el inicio para escalar y trabajar en equipo.
+FastAPI fue elegido por su probada performance y la posibilidad de mostrar datos de swagger en pruebas.
+PostgreSQL garantiza integridad de datos y escalabilidad. Se busca llegar a definir una separación clara entre modelos, esquemas y rutas para favorecer el  mantenimiento y crecimiento.
+Pensado desde el inicio para escalarm+odlos y funcionalidades y trabajar en equipo.
 
 🎨 Diseño y Experiencia de Usuario (UX/UI):
 
@@ -64,6 +65,7 @@ El diseño visual y de experiencia de usuario fue realizado por colaboradores ex
 🚀 Estado actual:
 
 🔧 En desarrollo activo
+
 Funcionalidades iniciales:
 Autenticación básica
 Modelado de usuarios y entidades principales
