@@ -1,13 +1,24 @@
-# Entorno virtual
+# Entornos virtuales
 venv/
+env/
+.venv/
 
-# Variables sensibles
+# Variables de entorno
 .env
+app/.env
 
 # Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
 # OS
 .DS_Store
 Thumbs.db
+
+# VSCode
+.vscode/
+
+# Archivos SQL locales
+*.sql
