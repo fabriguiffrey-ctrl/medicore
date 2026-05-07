@@ -48,7 +48,7 @@ medicore/
 
 FastAPI fue elegido por su probada performance y la posibilidad de mostrar datos de swagger en pruebas.
 PostgreSQL garantiza integridad de datos y escalabilidad. Se busca llegar a definir una separación clara entre modelos, esquemas y rutas para favorecer el  mantenimiento y crecimiento.
-Pensado desde el inicio para escalarm+odlos y funcionalidades y trabajar en equipo.
+Pensado desde el inicio para escalar módulos y funcionalidades y trabajar en equipo.
 
 🎨 Diseño y Experiencia de Usuario (UX/UI):
 

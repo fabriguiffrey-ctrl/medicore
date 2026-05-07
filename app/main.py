@@ -1,36 +1,33 @@
-<<<<<<< HEAD
 from fastapi import FastAPI
-from app.api.routes import users  
-
-app = FastAPI()
-
-
-app.include_router(users.router)
-
-@app.get("/")
-def root():
-    return {"message": "API funcionando"}
-=======
 from dotenv import load_dotenv
-load_dotenv()
 
-from fastapi import FastAPI
 from app.db.database import engine, Base
-import app.db.models  # Importa todos los modelos
+import app.models.user
 
-from app.api.users import router as users_router
+from app.api.routes import auth
+from app.api.routes.users import router as users_router
+
 from app.middleware.auth import AuthMiddleware
 
+load_dotenv()
+
 app = FastAPI()
 
-# Crea tablas si no existen
+# Crear tablas
 Base.metadata.create_all(bind=engine)
 
+# Middleware
 app.add_middleware(AuthMiddleware)
-app.include_router(users_router)
 
+# Rutas
+app.include_router(users_router, prefix="/users", tags=["Users"])
+app.include_router(auth.router, tags=["Auth"])
+
+# Health check
 @app.get("/health")
 def health():
     return {"status": "ok"}
 
->>>>>>> 84b76c2771508275288ddeba9bf9e93e98db1d3d
+@app.get("/")
+def root():
+    return {"message": "API funca 🚀"}

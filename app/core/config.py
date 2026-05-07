@@ -1,26 +1,32 @@
 from pydantic_settings import BaseSettings
 
-<<<<<<< HEAD
 
 class Settings(BaseSettings):
 
+    # Config general
     PROJECT_NAME: str = "Service API"
-    DATABASE_URL: str
-=======
-class Settings(BaseSettings):
+
+    # Datos de la DB
     DB_USER: str
     DB_PASSWORD: str
     DB_HOST: str
     DB_PORT: int
     DB_NAME: str
->>>>>>> 84b76c2771508275288ddeba9bf9e93e98db1d3d
+
+    # Construcción dinámica de la URL
+    @property
+    def DATABASE_URL(self):
+        return (
+            f"postgresql://{self.DB_USER}:"
+            f"{self.DB_PASSWORD}@"
+            f"{self.DB_HOST}:"
+            f"{self.DB_PORT}/"
+            f"{self.DB_NAME}"
+        )
 
     class Config:
         env_file = ".env"
 
-<<<<<<< HEAD
 
 settings = Settings()
-=======
-settings = Settings()
->>>>>>> 84b76c2771508275288ddeba9bf9e93e98db1d3d
+

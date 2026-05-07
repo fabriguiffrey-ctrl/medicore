@@ -1,20 +1,13 @@
-from sqlalchemy import Column, Integer, String
-<<<<<<< HEAD
-from app.db.base import Base
-
-class User(Base):
-
-=======
 from app.db.database import Base
+from sqlalchemy import Column, String
+from sqlalchemy.dialects.postgresql import UUID
+import uuid
 
 class User(Base):
->>>>>>> 84b76c2771508275288ddeba9bf9e93e98db1d3d
     __tablename__ = "users"
 
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     email = Column(String, unique=True, index=True)
-<<<<<<< HEAD
     hashed_password = Column(String)
-=======
-    hashed_password = Column(String)
->>>>>>> 84b76c2771508275288ddeba9bf9e93e98db1d3d
+    clinic_id = Column(UUID(as_uuid=True))
+    role = Column(String)
